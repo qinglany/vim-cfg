@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt-get install cscope
 sudo apt-get install -y ctags
 
 echo install Vundle:
