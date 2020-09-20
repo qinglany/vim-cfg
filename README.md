@@ -1,5 +1,8 @@
 # vim-cfg
 Manage my vim configuration
 
-Need install Vundle:
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+F3    tagbar
+\F3   NERDTree
+1     跳转上一个文件
+2     跳转下一个文件
+\1    关闭当前文件
