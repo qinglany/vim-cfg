@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install cscope
+sudo apt-get install -y cscope
 sudo apt-get install -y ctags
 sudo apt-get install -y silversearcher-ag 
 
