@@ -1,8 +1,9 @@
 # vim-cfg
 Manage my vim configuration
 
-F3    tagbar
-\F3   NERDTree
-1     跳转上一个文件
-2     跳转下一个文件
-\1    关闭当前文件
+快捷键：
+F2      taglist
+F3      NERDTree
+ctrl+p  文件搜索
+1       跳转上一个文件
+2       跳转下一个文件
