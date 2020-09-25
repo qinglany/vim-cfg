@@ -6,8 +6,9 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tomasr/molokai'
-Plugin 'taglist.vim'
+Plugin 'vim-scripts/taglist.vim'
 Plugin 'preservim/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
@@ -31,16 +32,22 @@ set incsearch	"Real-time search content highlighting
 set cursorline	"highlight the current line
 
 "*****************taglist config*******************
-nmap <silent><F3> :TlistToggle<cr>
+nmap <silent><F2> :TlistToggle<cr>
 let Tlist_Show_One_File=1	"only display the taglist of the current file
 "let Tlist_Use_Right_Window=1	"display in the right window
 let Tlist_Use_Left_Window=1	"display in the left window
 let Tlist_Exit_OnlyWindow=1	"if the taglist window is the last window, exit vim
 
 "*****************NERDTree config*******************
-nmap <silent><F4> :NERDTreeToggle<cr>
+nmap <silent><F3> :NERDTreeToggle<cr>
 let NERDTreeQuitOnOpen=1	"close tree when open file
 let NERDTreeShowHidden=1	"show hidden file
 let NERDTreeShowBookmarks=1 "show Bookmarks
 let NERDTreeWinPos="right"	"display in the right window
 let NERDTreeWinSize=30	"set NERDTree window width
+
+"****************Ctrlp config***********************
+let ctrlp_map='<c-p>'
+let ctrlp_cmd='CtrlP'
+let ctrlp_working_path_mode='cra'
+let ctrlp_show_hidden=1	"show hidden file
