@@ -45,9 +45,15 @@ let NERDTreeShowHidden=1	"show hidden file
 let NERDTreeShowBookmarks=1 "show Bookmarks
 let NERDTreeWinPos="right"	"display in the right window
 let NERDTreeWinSize=30	"set NERDTree window width
-
+"let NERDTreeChDirMode=2	"the current working directory is changed whenever the tree root is changed.
 "****************Ctrlp config***********************
 let ctrlp_map='<c-p>'
 let ctrlp_cmd='CtrlP'
 let ctrlp_working_path_mode='cra'
 let ctrlp_show_hidden=1	"show hidden file
+
+if executable('ag')
+	set grepprg=ag\ --nogroup\ --nocolor\ --column
+	let ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
+	let ctrlp_use_caching=0
+endif
